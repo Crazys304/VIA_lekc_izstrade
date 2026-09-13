@@ -31,14 +31,14 @@ double average(int* points, int n) {
 }
 
 int main() {
-    int n = 4;
-    string* names = new string[n]; // Braucēju vārdu arrays
-    int* points = new int[n]; // Punktu arrays
+    const int MAX_DRIVERS = 4;
+    string* names = new string[MAX_DRIVERS]; // Braucēju vārdu arrays
+    int* points = new int[MAX_DRIVERS]; // Punktu arrays
 
     cout << "=== F1 Rezultati ===" << endl;
 
     // Ievada vārdu un punktus katram braucējam
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < MAX_DRIVERS; i++) {
         cout << "Ievadi pilota vardu: " << "\n";
         cin >> names[i];
         cout << "Ievadi punktus: " << "\n";
@@ -54,10 +54,10 @@ int main() {
 
     // Izvade
     cout << "========================" << "\n";
-    printAll(names, points, n);
-    cout << names[findMaxIndex(points, n)] << " ir lideris" << "\n";
-    cout << names[findMinIndex(points, n)] << " Ir pedejais" << "\n";
-    cout << "Videjie punkti: " << average(points, n) << endl;
+    printAll(names, points, MAX_DRIVERS);
+    cout << names[findMaxIndex(points, MAX_DRIVERS)] << " ir lideris" << "\n";
+    cout << names[findMinIndex(points, MAX_DRIVERS)] << " Ir pedejais" << "\n";
+    cout << "Videjie punkti: " << average(points, MAX_DRIVERS) << endl;
 
     delete[] names;
     delete[] points;
