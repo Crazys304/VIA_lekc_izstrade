@@ -18,12 +18,15 @@ int main() {
     string* names = new string[n];
     int* points = new int[n];
 
-    names[0] = "Verstappen"; points[0] = 350;
-    names[1] = "Norris";     points[1] = 320;
-    names[2] = "Leclerc";    points[2] = 290;
+    for (int i = 0; i < n; i++) {
+        cout << "Ievadi pilota vardu: ";
+        cin >> names[i];
+        cout << "Ievadi punktus: ";
+        cin >> points[i];
+    }
 
     printAll(names, points, n);
-    cout << names[findMaxIndex(points, n)] << " ir līderis" << endl;
+    cout << names[findMaxIndex(points, n)] << " ir lideris" << endl;
 
     delete[] names;
     delete[] points;
