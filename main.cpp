@@ -47,6 +47,7 @@ bool isValidName(string name) {
     return true;
 }
 
+// Galvenā funkcija - ievade/izvade un salīdzina pilotu datus
 int main() {
     const int MAX_DRIVERS = 4;
     string* names = new string[MAX_DRIVERS]; // Braucēju vārdu arrays
