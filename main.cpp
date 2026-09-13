@@ -30,6 +30,13 @@ double average(int* points, int n) {
     return (double)sum / n;
 }
 
+// Funkcija kas pārbauda, vai vārds jau ir izmantots iepriekš
+bool isNameTaken(string* names, int count, string newName) {
+    for (int i = 0; i < count; i++)
+        if (names[i] == newName) return true;
+    return false;
+}
+
 int main() {
     const int MAX_DRIVERS = 4;
     string* names = new string[MAX_DRIVERS]; // Braucēju vārdu arrays
