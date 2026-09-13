@@ -13,6 +13,12 @@ int findMaxIndex(int* points, int n) {
     return maxIndex;
 }
 
+double average(int* points, int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++) sum += points[i];
+    return (double)sum / n;
+}
+
 int main() {
     int n = 3;
     string* names = new string[n];
@@ -33,6 +39,7 @@ int main() {
 
     printAll(names, points, n);
     cout << names[findMaxIndex(points, n)] << " ir lideris" << endl;
+    cout << "Videjie punkti: " << average(points, n) << endl;
 
     delete[] names;
     delete[] points;
