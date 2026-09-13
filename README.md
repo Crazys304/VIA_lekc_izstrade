@@ -25,3 +25,7 @@ Lietotājs ievada braucēju vārdus un punktus, programma izvada:
 1. Atver projektu ar CLion
 2. Spied zaļo "Run" pogu main.cpp failā
 3. Ievadi 4 braucēju vārdus un punktus, kad programma prasa
+
+## Autors
+
+Ričards Ā, VIA IT3
