@@ -53,9 +53,10 @@ int main() {
     }
 
     // Izvade
+    cout << "========================" << "\n";
     printAll(names, points, n);
-    cout << names[findMaxIndex(points, n)] << " ir lideris" << endl;
-    cout << names[findMinIndex(points, n)] << " Ir pedejais" << endl;
+    cout << names[findMaxIndex(points, n)] << " ir lideris" << "\n";
+    cout << names[findMinIndex(points, n)] << " Ir pedejais" << "\n";
     cout << "Videjie punkti: " << average(points, n) << endl;
 
     delete[] names;
