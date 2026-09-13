@@ -48,6 +48,13 @@ int main() {
     for (int i = 0; i < MAX_DRIVERS; i++) {
         cout << "Ievadi pilota vardu: " << "\n";
         cin >> names[i];
+
+        // Pārbauda, vai vārds nav jau izmantots
+        while (isNameTaken(names, i, names[i])) {
+            cout << "Sis vards jau ir izmantots, megini citu" << "\n";
+            cin >> names[i];
+        }
+
         cout << "Ievadi punktus: " << "\n";
         cin >> points[i];
         // Ja punkti nav derīgs skaitlis, liks ievadīt vēlreiz
