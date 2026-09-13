@@ -90,6 +90,7 @@ int main() {
     cout << names[findMaxIndex(points, MAX_DRIVERS)] << " ir lideris" << "\n";
     cout << names[findMinIndex(points, MAX_DRIVERS)] << " ir pedejais" << "\n";
     cout << "Videjie punkti: " << average(points, MAX_DRIVERS) << endl;
+    cout << "========================" << "\n";
 
     delete[] names;
     delete[] points;
