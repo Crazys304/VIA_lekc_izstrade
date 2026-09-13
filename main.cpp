@@ -38,7 +38,7 @@ bool isNameTaken(string* names, int count, string newName) {
 }
 
 // Funkcija kas pārbauda, vai vārdā ir tikai burti
-bool isvalidName(string name) {
+bool isValidName(string name) {
     for (int i = 0; i < name.length(); i++) {
         char c = name[i];
         if (!((c >= 'a' && c <= 'z') || ( c>= 'A' && c <= 'Z')))
@@ -58,6 +58,12 @@ int main() {
     for (int i = 0; i < MAX_DRIVERS; i++) {
         cout << "Ievadi pilota vardu: " << "\n";
         cin >> names[i];
+
+        // Pārbauda, vai vārds nesatur ciparus vai citas rakstzīmes
+        while (!isValidName(names[i])) {
+            cout << "Varda nedrikst but cipari, megini velreiz: " << "\n";
+            cin >> names[i];
+        }
 
         // Pārbauda, vai vārds nav jau izmantots
         while (isNameTaken(names, i, names[i])) {
