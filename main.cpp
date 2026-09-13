@@ -37,6 +37,16 @@ bool isNameTaken(string* names, int count, string newName) {
     return false;
 }
 
+// Funkcija kas pārbauda, vai vārdā ir tikai burti
+bool isvalidName(string name) {
+    for (int i = 0; i < name.length(); i++) {
+        char c = name[i];
+        if (!((c >= 'a' && c <= 'z') || ( c>= 'A' && c <= 'Z')))
+            return false;
+    }
+    return true;
+}
+
 int main() {
     const int MAX_DRIVERS = 4;
     string* names = new string[MAX_DRIVERS]; // Braucēju vārdu arrays
