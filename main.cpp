@@ -83,6 +83,7 @@ int main() {
     }
 
     // Izvade
+    cout << "\n";
     cout << "========================" << "\n";
     printAll(names, points, MAX_DRIVERS);
     cout << names[findMaxIndex(points, MAX_DRIVERS)] << " ir lideris" << "\n";
