@@ -19,3 +19,9 @@ Lietotājs ievada braucēju vārdus un punktus, programma izvada:
 - `average` — aprēķina vidējo punktu skaitu
 - `isNameTaken` — pārbauda, vai vārds jau ir izmantots
 - `isValidName` — pārbauda, vai vārdā ir tikai burti
+
+## Kā palaist
+
+1. Atver projektu ar CLion
+2. Spied zaļo "Run" pogu main.cpp failā
+3. Ievadi 4 braucēju vārdus un punktus, kad programma prasa
