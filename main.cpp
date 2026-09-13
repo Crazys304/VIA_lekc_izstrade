@@ -6,6 +6,13 @@ void printAll(string* names, int* points, int n) {
         cout << names[i] << " - " << points[i] << " pts" << endl;
 }
 
+int findMaxIndex(int* points, int n) {
+    int maxIndex = 0;
+    for (int i = 1; i < n; i++)
+        if (points[i] > points[maxIndex]) maxIndex = i;
+    return maxIndex;
+}
+
 int main() {
     int n = 3;
     string* names = new string[n];
@@ -16,6 +23,7 @@ int main() {
     names[2] = "Leclerc";    points[2] = 290;
 
     printAll(names, points, n);
+    cout << names[findMaxIndex(points, n)] << " ir līderis" << endl;
 
     delete[] names;
     delete[] points;
