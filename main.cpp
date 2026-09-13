@@ -20,7 +20,7 @@ double average(int* points, int n) {
 }
 
 int main() {
-    int n = 3;
+    int n = 4;
     string* names = new string[n];
     int* points = new int[n];
 
