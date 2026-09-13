@@ -35,6 +35,8 @@ int main() {
     string* names = new string[n]; // Braucēju vārdu arrays
     int* points = new int[n]; // Punktu arrays
 
+    cout << "=== F1 Rezultati ===" << endl;
+
     // Ievada vārdu un punktus katram braucējam
     for (int i = 0; i < n; i++) {
         cout << "Ievadi pilota vardu: " << "\n";
