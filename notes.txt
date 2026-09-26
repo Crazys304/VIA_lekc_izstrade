@@ -2,4 +2,4 @@ Rinda 1: main versija paliek
 Rinda 2: zara versija 2 palika
 Rinda 3: zara versijs
 Rinda 4: maina versij
-Rinda 5: sakums
+Rinda 5: branch versionss
