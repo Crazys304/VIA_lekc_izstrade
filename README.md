@@ -1,3 +1,5 @@
+[![CI](https://github.com/Crazys304/VIA_lekc_izstrade/actions/workflows/ci.yml/badge.svg)](https://github.com/Crazys304/VIA_lekc_izstrade/actions/workflows/ci.yml)
+
 # VIA_lekc_izstrade
 
 Repo priekš "Programmatūras izstrādes un uzturēšanas dzīves cikls" kursa
