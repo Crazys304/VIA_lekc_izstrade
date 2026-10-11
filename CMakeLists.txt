@@ -4,4 +4,5 @@ project(VIA_lekc_izstrade)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(VIA_lekc_izstrade
-        main.cpp)
+        main.cpp
+        functions.cpp)
